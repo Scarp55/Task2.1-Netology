@@ -10,7 +10,7 @@ public class Main {
 
         System.out.println("Список возможных товаров для покупки");
         for (int i = 1; i <= products.length; i++) {
-            System.out.println(i + ". " + products[i-1] + " " + prices[i-1] + " руб/шт");
+            System.out.println(i + ". " + products[i - 1] + " " + prices[i - 1] + " руб/шт");
         }
 
         boolean basketEmpty = true;
@@ -37,7 +37,7 @@ public class Main {
             } else {
                 basketEmpty = false;
                 String[] temp = inputString.split(" ");
-                int productNumber = Integer.parseInt(temp[0])-1;
+                int productNumber = Integer.parseInt(temp[0]) - 1;
                 int productCount = Integer.parseInt(temp[1]);
                 sumCount[productNumber] = sumCount[productNumber] + productCount;
             }
